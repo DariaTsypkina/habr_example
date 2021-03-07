@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habr Example</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-rows: repeat(2, 200px);
+            grid-gap: 10px;
+        }
+
+        .container>div>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div><img src="assets/images/animals.jpg" alt="animals"></div>
+        <div><img src="assets/images/beach.jpg" alt="beach"></div>
+        <div><img src="assets/images/ocean.jpg" alt="ocean"></div>
+        <div><img src="assets/images/pelican.jpg" alt="pelican"></div>
+        <div><img src="assets/images/summer.jpg" alt="summer"></div>
+        <div><img src="assets/images/sunset.jpg" alt="sunset"></div>
+    </div>
+</body>
+
+</html>
